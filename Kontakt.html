@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="no"> <!-- må spørre hvordan man ta flere språ inn på -->
+<head>
+	<title>Nasa</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+	<img src="images/logo.png" alt="logo" width="250" height="200">
+</header>
+
+
+	<div class="alt">
+
+		<nav class="col-3 col-m-4 menu">
+			<ul>
+				<li>Histore om</li>
+				<li>Hva jobber Nasa med i dag </li>
+				<li>Dagens bilde/vido</li>
+				<li>spørsmål folk luer på </li>
+				<li>Kontakt</li>
+			</ul>
+		</nav>
+	</div>	
+
+
+
+<style>
+			
+		*{
+			box-sizing: border-box;
+		}
+
+		input[type=text], select, textarea{
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius:  4px;
+			resize: vertical;
+		}
+
+		label{
+			
+			display: inline-block;
+		}
+
+		input[type=submit]{
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+
+		input[type=submit]: hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			padding: 20px;
+		}
+
+
+		.col-25{
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+
+		.col-75{
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+
+		/* */
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		@media screen and (max-width: 600px) {
+			.col-25, .col-75 input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+</style>
+
+
+<h2>Har du noe spørmål</h2>
+<p>her kan du stille meg spørmål.. så skal jeg svar så fort jeg kan  </p>
+
+
+<div class="container">
+	<form action="/action_page.php">
+			<div class="row">
+					<div class="col-25">
+						<label for="fname">Fornavne</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="fname" name="firstname" placeholder="Navn" >
+					</div>
+				</div>
+			<div class="row">
+						<div class="col-25">
+							<label for="lname">Etternavn</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Etternavn">
+						</div>
+				</div>
+			<div class="row">
+					 <div class="col-25">
+					 	<label for="country">land</label>
+					 	</div>
+					 <div class="col-25">
+						 <select id="country" name="country">
+						 	<option value="Norge">Norge</option>
+						 	<option value="USA">USA</option>
+						</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="subject" name="subject"></label>
+				</div>
+				<div class="col-25">
+					<textarea id="somthing.." name="subject" placeholder="Skrive her.." style="height: 200px" ></textarea>
+				</div>
+		</div>
+			<div class="row">
+			<input type="submit" name="submit">	
+		</div>
+		
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+		<p>
+			Nyhetsforretninger, skoler og tekstboksforfattere kan bruke NASA-innhold uten å ha eksplisitt tillatelse. NASA-innhold som brukes på en faktisk måte som ikke innebærer godkjenning, kan brukes uten at det kreves eksplisitt tillatelse. NASA skal anerkjennes som kilden til materialet. NASA bruker av og til opphavsrettsbeskyttet materiale med tillatelse på sin nettside. 
+
+			Disse bildene vil bli merket opphavsrett med navnet på opphavsrettsinnehaveren. NASAs bruk overfører ikke noen rett til andre til å bruke det samme materialet. De som ønsker å bruke opphavsrettsbeskyttet materiale, må kontakte rettighetshaveren direkte.
+		</p> 
+	</footer>
