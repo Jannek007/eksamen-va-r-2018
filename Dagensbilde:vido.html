@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body>
 <header>
 	<img src="images/logo.png" alt="logo" width="250" height="200">
 </header>
@@ -14,7 +15,7 @@
 
 		<nav class="col-3 col-m-4 menu">
 			<ul>
-				<li>Histore om...</li>
+				<li>Histore om</li>
 				<li>Hva jobber Nasa med i dag </li>
 				<li>Dagens bilde/vido</li>
 				<li>spørsmål folk lurer på </li>
@@ -24,9 +25,13 @@
 
 
 
+			<div id="nasa"></div>
 
-		<script type="text/javascript"></script>
-			console.log("hallo");
+
+
+
+		
+			
 
 
 
@@ -54,3 +59,29 @@
 
 		</p> 
 	</footer>
+
+			<script type="text/javascript">
+				//console.log("hallo")
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						var obj =JSON.parse(this.responseText);
+						console.log(obj);
+						skrivUt(obj);
+					}
+				} 
+				xhttp.open("GET","https://api.nasa.gov/planetary/apod?api_key=45jtJwPIR1hkrFTL7FMcTzDqTNyp5KzdQ8ULVgev",true);
+				xhttp.send();
+
+				function skrivUt(obj) {
+					var ut = document.getElementById("nasa");
+					if (obj.media_type=="image"){
+						ut.innerHTML = "<img src='" + obj.hdurl+"' alt='"+obj.title+"'style='width: 100%'>";
+						ut.innerHTML += "<p>" + obj.explanation + "</P>";
+					} else if (obj.media_type=="video") {
+
+					}
+				}
+		</script>
+</body>
+</html>

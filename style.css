@@ -1,6 +1,32 @@
 *{
 	box-sizing: border-box;
 }
+html, body{
+	background-color: var(--white);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	min-height: 100%;
+}
+
+
+body, html, h1, h2, h3, h4, h5, h6, p, 
+img, a, div, aside, nav, ul, ol, li, 
+input, textarea, select, button
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	text-decoration: none;
+	list-style-type: none;
+	line-height: 1.5;
+}
 
 .alt::after{
 	content: "";
@@ -12,6 +38,13 @@
 	float: left;
 	padding: 15px;
 }
+
+
+.alt{
+	display: flex;
+	flex-direction: row;
+}
+
 
 html{
 	font-family: sans-serif;
@@ -48,46 +81,16 @@ img{
 
 }
 
-.text{
-	text-align: center;
-	
-
-
-}
-
-
-
-
-
-
-
-
 
 
 footer{
 	background-color: #1666b0;
 	color: #ffffff;
-	text-align: center;
 	font-size: 16px;
-	padding: 15px;
+	line-height: 1.5;
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
