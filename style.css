@@ -56,6 +56,7 @@ img{
 	margin-right: auto;
 }
 
+
 .menu ul {
 	list-style-type: none;
 	margin: 0;
@@ -70,11 +71,16 @@ img{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.menu li:hover {
-	background-color: #ffffff;
-	color: #e52129;
+.menu li a {
+	color: #020202;
+
 }
 
+.menu li a:hover {
+	background-color: #ffffff;
+	color: #e52129;
+
+}
 
 .oppskying {
 	font-size: 12px;
@@ -82,14 +88,28 @@ img{
 }
 
 
+.text {
+	padding-left: 5%;
 
-footer{
-	background-color: #1666b0;
-	color: #ffffff;
+	
+	
+}
+
+.text h2{
 	font-size: 16px;
-	line-height: 1.5;
+	
+
+}
+
+.text p {
+	font-size: 14px;
+	
+
+}
 
 
+.Nasaapi {
+	padding-left: 16px;
 }
 
 
@@ -100,6 +120,83 @@ footer{
 
 
 
+
+
+
+
+
+/* Her kommer Kontakt skjemaet 
+
+
+	/*skrive boksen */
+		input[type=text], select, textarea{
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius:  4px;
+			resize: vertical;
+		}
+
+		label{
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+
+		/* kanpp send inn*/
+		input[type=submit]{
+			background-color: #e52129;
+			color: white;
+    		padding: 12px 20px;
+    		border: none;
+    		border-radius: 4px;
+    		cursor: pointer;
+    		float: right;
+		}
+
+		input[type=submit]: hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+
+		.col-25{
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+
+		.col-75{
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+
+		/* */
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		@media screen and (max-width: 600px) {
+			.col-25, .col-75 input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
+
+footer{
+	background-color: #1666b0;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 1.5;
+}
 
 
 
